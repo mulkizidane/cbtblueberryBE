@@ -1,0 +1,36 @@
+POST http://localhost:5000/exams
+Content-Type: application/json
+
+{
+    "exam_name": "Informatics",
+    "exam_duration": 90,
+    "total_question": 40,
+    "passing_score": 65,
+    "questions": [
+        {
+            "no_question": 1,
+            "question_type": "Multiple Choices",
+            "question": "What is JavaScript?",
+            "correct_answer": "D",
+            "choices": [
+                { "option": "A", "text": "Economy is" },
+                { "option": "B", "text": "Whaat" },
+                { "option": "C", "text": "Okeeey" },
+                { "option": "D", "text": "i dont know" }
+            ]
+        },
+        {
+            "no_question": 2,
+            "question_type": "ESSAY",
+            "question": "How to build an AI?",
+            "correct_answer": "Ya gitu deh",
+            "essay_question": "..."
+        }
+    ]
+}
+
+###
+GET http://localhost:5000/exams
+
+###
+DELETE http://localhost:5000/exams/5

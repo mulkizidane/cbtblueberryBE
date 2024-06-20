@@ -1,0 +1,9 @@
+node_modules/
+
+config/config.json       
+.env                      
+
+Thumbs.db        
+.vscode/ 
+
+.env.local       # File .env lokal yang tidak ingin diikutsertakan dalam kontrol versi
